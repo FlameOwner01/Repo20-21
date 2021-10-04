@@ -1,0 +1,59 @@
+.keyboard{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    user-select: none;
+    transition: bottom 0.4s;
+    
+}
+
+
+
+.keyboard_keys{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.keyboard_key{
+    color: white;
+height: 50px;
+width: 8.5%;
+max-width: 200px;
+margin: 0;
+border: 2px solid rgb(59, 68, 76);
+background: rgb(25, 24, 23);
+font-size: 1.05rem;
+outline: none;
+cursor: pointer;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+vertical-align: top;
+padding: 0;
+position: relative;
+}
+
+.keyboard_key:active{
+    background: rgb(78, 90, 101);
+}
+.keyboard_key-wide{
+    width: 15%;
+    height: 90px;
+}
+.keyboard_key-extra-wide{
+    width: 91%;
+    max-width: 1500px;
+}
+.keyboard_key-justwide{
+    width: 23%;
+    max-width: 400px;
+}
+.keyboard_key-activatable::after{
+content: '';
+}
+.keyboard_key-active::after{
+    background: rgb(78, 90, 101);
+}
